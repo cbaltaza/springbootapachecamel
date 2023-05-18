@@ -18,17 +18,17 @@ import com.example.springbootapachecamel.service.ItemsServices;
  * @author BalMen
  *
  */
-@RestController
+//@RestController
 public class ItemController {
 
 	@Autowired
 	private ItemsServices itemsServices;
 	
-	   @RequestMapping("/")
+	 //  @RequestMapping("/")
 	    String home() {
 	        return "Hello World!";
 	    }
-	   @GetMapping("/{id}")
+	//   @GetMapping("/{id}")
 	   public List<Item> buscarItem(@PathVariable("id") int itemId) {
 	        return itemsServices.findAll(itemId);
 	    }

@@ -1,12 +1,5 @@
 package com.example.springbootapachecamel.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Item {
 	/**
 	 * cantidad
@@ -16,5 +9,29 @@ public class Item {
 	 * monto
 	 */
 	private Float monto;
+	/**
+	 * @return the cantidad
+	 */
+	public Integer getCantidad() {
+		return cantidad;
+	}
+	/**
+	 * @param cantidad the cantidad to set
+	 */
+	public void setCantidad(Integer cantidad) {
+		this.cantidad = cantidad;
+	}
+	/**
+	 * @return the monto
+	 */
+	public Float getMonto() {
+		return monto;
+	}
+	/**
+	 * @param monto the monto to set
+	 */
+	public void setMonto(Float monto) {
+		this.monto = monto;
+	}
 
 }

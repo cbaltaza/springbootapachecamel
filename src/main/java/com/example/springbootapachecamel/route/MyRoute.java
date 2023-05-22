@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  * @author BalMen
  *
  */
-//@Component
+@Component
 public class MyRoute extends RouteBuilder {
 	
 	@Autowired
